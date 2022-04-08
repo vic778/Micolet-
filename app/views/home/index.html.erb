@@ -1,0 +1,41 @@
+
+<h1>Micolet</h1>
+
+<%= form_with model: @user, remote: true do |f| %>
+
+  <% if @user.errors.any? %>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+
+  <% end %>
+  <div>
+  <%= f.label :Email %>
+  </div>
+  <div>
+  <%= f.email_field :email, placeholder: "exemple@email.com" %>
+  </div>
+
+  <br>
+
+  <div>
+  <%= f.label :Preferences %>
+  </div>
+
+  <div>
+  <%= check_box_tag 'user[preferences][]' , 'woman', checked('woman'), id: 'preference_woman' %>
+  <%= label_tag(:preferences, "Women's Fashion") %>
+    <br>
+  <%= check_box_tag 'user[preferences][]' , 'man', checked('man'), id: 'preference_man' %>
+  <%= label_tag(:preferences, "Man's Fashion") %>
+    <br>
+  <%= check_box_tag 'user[preferences][]' , 'child', checked('child'), id: 'preference_child' %>
+  <%= label_tag(:preferences, "Children's Fashion") %>
+  </div>
+   
+
+  <%= f.submit "Subscribe !", class: "btn btn-primary" %>
+
+<% end %>
