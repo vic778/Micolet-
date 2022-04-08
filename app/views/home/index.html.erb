@@ -2,15 +2,8 @@
 <h1>Micolet</h1>
 
 <%= form_with model: @user, remote: true do |f| %>
+ 
 
-  <% if @user.errors.any? %>
-    <ul>
-      <% @user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-    </ul>
-
-  <% end %>
   <div>
   <%= f.label :Email %>
   </div>
