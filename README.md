@@ -13,7 +13,7 @@
  ![](https://github.com/vic778/Micolet-/blob/develop/screens/notifiction.png)
 
   ## Translate
- ![]()
+ ![](https://github.com/vic778/Micolet-/blob/develop/screens/translate.png)
 
  ## Test the components, models, views, routes and helpers
  ![](https://github.com/vic778/Micolet-/blob/develop/screens/test.png)
