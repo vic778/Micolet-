@@ -1,6 +1,11 @@
 
 <h1>Micolet</h1>
 
+<h3><%= t 'static_pages.index.welcome' %></h3>
+<p><%= t 'static_pages.index.services_html' %></p>
+
+
+
 <%= form_with model: @user, remote: true do |f| %>
  
 
@@ -14,7 +19,7 @@
   <br>
 
   <div>
-  <%= f.label :Preferences %>
+  <%= f.label t "models.attributes.preferences" %>
   </div>
 
   <div>
@@ -29,6 +34,6 @@
   </div>
    
 
-  <%= f.submit "Subscribe !", class: "btn btn-primary" %>
+  <%= f.submit t 'global.forms.submit' %>
 
 <% end %>

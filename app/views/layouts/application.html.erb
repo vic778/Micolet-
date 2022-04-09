@@ -19,6 +19,14 @@
       <p style="color: green"><%= alert %></p>
     <% end %>
 
+    <nav class="navbar">
+      <ul>
+        <li><%= link_to 'English', root_path(locale: :en) %></li>
+        <li><%= link_to 'French', root_path(locale: :fr) %></li>
+        <li><%= link_to 'Spanish', root_path(locale: :es) %></li>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
