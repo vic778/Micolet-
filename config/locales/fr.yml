@@ -1,0 +1,17 @@
+fr:
+  activerecord:
+  models:
+    Home: "Acceuil"
+    attributes:
+        email: "votre email"
+        preferences: " Preferences :"
+  global:
+   forms:
+    submit: Inscrivez-vous!
+    menu:
+      home: "acceuille"
+      user: "uulisateur"
+  static_pages:
+    index:
+      welcome: "Bienvenue. Nous allons bientôt lancer notre site dans ce pays."
+      services_html: "Inscrivez-vous pour recevoir notre bulletin d'information"

@@ -1,0 +1,17 @@
+es:
+  activerecord:
+  models:
+    Home: "Home"
+    attributes:
+        email: "your email"
+        preferences: "Preferencias :"
+  global:
+   forms:
+    submit: Suscríbase ahora!.
+    menu:
+      home: "home"
+      user: "user"
+  static_pages:
+    index:
+      welcome: "Bienvenido. Pronto lanzaremos nuestro sitio en este país."
+      services_html: "Suscríbase para recibir nuestro boletín de noticias"

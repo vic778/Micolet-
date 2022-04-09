@@ -1,0 +1,3 @@
+NewsletterMailer#new_newsletter
+
+Hi, find me in app/views/newsletter_mailer/new_newsletter

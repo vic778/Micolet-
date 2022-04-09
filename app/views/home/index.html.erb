@@ -1,0 +1,39 @@
+
+<h1>Micolet</h1>
+
+<h3><%= t 'static_pages.index.welcome' %></h3>
+<p><%= t 'static_pages.index.services_html' %></p>
+
+
+
+<%= form_with model: @user, remote: true do |f| %>
+ 
+
+  <div>
+  <%= f.label :Email %>
+  </div>
+  <div>
+  <%= f.email_field :email, placeholder: "exemple@email.com" %>
+  </div>
+
+  <br>
+
+  <div>
+  <%= f.label t "models.attributes.preferences" %>
+  </div>
+
+  <div>
+  <%= check_box_tag 'user[preferences][]' , 'woman', checked('woman'), id: 'preference_woman' %>
+  <%= label_tag(:preferences, "Women's Fashion") %>
+    <br>
+  <%= check_box_tag 'user[preferences][]' , 'man', checked('man'), id: 'preference_man' %>
+  <%= label_tag(:preferences, "Man's Fashion") %>
+    <br>
+  <%= check_box_tag 'user[preferences][]' , 'child', checked('child'), id: 'preference_child' %>
+  <%= label_tag(:preferences, "Children's Fashion") %>
+  </div>
+   
+
+  <%= f.submit t 'global.forms.submit' %>
+
+<% end %>
