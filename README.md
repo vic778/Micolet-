@@ -3,17 +3,17 @@
 > Micolet newsletter is a web page that allows the user to subscribe in order to receive from time to time news about the articles that will be updated on the site of the company. according to the obligations of the project, lick to see what I have achieved 
  there are the project requirements:
 
- ### Stored the email and the prefereces in the Db
- [](..)
+ ## Stored the email and the prefereces in the Db
+ [](https://github.com/vic778/Micolet-/blob/develop/screens/save-data.png)
 
- ### SSend an email after subscribed
- [](..)
+ ## Send an email after subscribed
+ [](https://github.com/vic778/Micolet-/blob/develop/screens/enail.png)
 
- ### Notifie user about errors
- [](..)
+ ## Notifie user about errors
+ [](https://github.com/vic778/Micolet-/blob/develop/screens/notifiction.png)
 
- ### Test the components, models, views, routes and helpers
- [](..)
+ ## Test the components, models, views, routes and helpers
+ [](https://github.com/vic778/Micolet-/blob/develop/screens/test.png)
  
 
 This API is made of one model:
