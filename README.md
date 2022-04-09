@@ -9,7 +9,7 @@
  ## Send an email after subscribed
  ![](https://github.com/vic778/Micolet-/blob/develop/screens/enail.png)
 
- ## Notifie user about errors
+ ## Notifications
  ![](https://github.com/vic778/Micolet-/blob/develop/screens/notifiction.png)
 
   ## Translate
