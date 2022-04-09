@@ -1,6 +1,8 @@
 # MICOLET
 
-> Micolet newsletter is a web page that allows the user to subscribe in order to receive from time to time news about the articles that will be updated on the site of the company. according to the obligations of the project, lick to see what I have achieved 
+> Micolet newsletter is a web page that allows the user to subscribe in order to receive from time to time news about the articles that will be updated on the site of the company. according to the obligations of the project, [click to see what I have achieved](https://github.com/vic778/Micolet-/pull/5)
+
+
  there are the project requirements:
 
  ## Stored the email and the prefereces in the Db
