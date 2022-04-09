@@ -7,13 +7,16 @@
  ![](https://github.com/vic778/Micolet-/blob/develop/screens/save-data.png)
 
  ## Send an email after subscribed
- [](https://github.com/vic778/Micolet-/blob/develop/screens/enail.png)
+ ![](https://github.com/vic778/Micolet-/blob/develop/screens/enail.png)
 
  ## Notifie user about errors
- [](https://github.com/vic778/Micolet-/blob/develop/screens/notifiction.png)
+ ![](https://github.com/vic778/Micolet-/blob/develop/screens/notifiction.png)
+
+  ## Translate
+ ![]()
 
  ## Test the components, models, views, routes and helpers
- [](https://github.com/vic778/Micolet-/blob/develop/screens/test.png)
+ ![](https://github.com/vic778/Micolet-/blob/develop/screens/test.png)
  
 
 This API is made of one model:
@@ -58,7 +61,7 @@ Here are the steps to follow in order to get this project on your local computer
 
 ### Setup
 
-clone this repo by typing `git clone https://github.com/vic778/e-coomerce`
+clone this repo by typing `git clone https://github.com/vic778/Micolet-`
 
 ### Install
 
