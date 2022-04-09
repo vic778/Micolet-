@@ -1,110 +1,105 @@
 .success {
-    color: green;
-    font-weight: bolder;
+  color: green;
+  font-weight: bolder;
 }
 
 .failed {
-    color: rgb(175, 0, 0);
-    font-weight: bolder;
+  color: rgb(175, 0, 0);
+  font-weight: bolder;
 }
 
 .navbar {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .navbar ul li {
-    display: inline-block;
-    margin: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 5px black;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 5px black;
 }
 
 .navbar ul li:hover {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 .navbar ul li a {
-    color: #000;
-    text-decoration: none;
+  color: #000;
+  text-decoration: none;
 }
 
 .title {
-    align-items: center;
-    color: #000;
-    font-size: 70px;
+  align-items: center;
+  color: #000;
+  font-size: 70px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  text-align: center;
 }
 
 h3 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 form {
-    width: 350px;
+  width: 350px;
 }
 
 label {
-    color: gray;
+  color: gray;
 }
 
 .label-name {
-    color: #000;
-    padding: 10px;
+  color: #000;
+  padding: 10px;
 }
 
 .email {
-    padding: 10px 130px 10px 10px;
-    outline: none;
-    border: 2px solid aquamarine;
-    border-radius: 4px;
-    margin-top: 5px;
+  padding: 10px 130px 10px 10px;
+  outline: none;
+  border: 2px solid aquamarine;
+  border-radius: 4px;
+  margin-top: 5px;
 }
 
 .info {
-    padding: 10px;
+  padding: 10px;
 }
 
-/* .info-details {
-    padding: 10px;
-} */
-
 .checks {
-    color: aquamarine;
-    /* width: 100px; */
+  color: aquamarine;
 }
 
 .subscribe {
-    background-color: aquamarine;
-    border: none;
-    border-radius: 4px;
-    padding: 10px;
-    color: #000;
-    font-size: 15px;
-    cursor: pointer;
-    outline: none;
-    width: 50%;
-    margin: 20px auto;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  width: 50%;
+  margin: 20px auto;
 }
 
 .subscribe input {
-    border: none;
-    width: 100%;
-    cursor: pointer;
-    background-color: aquamarine;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  background-color: aquamarine;
 }
