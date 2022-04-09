@@ -4,7 +4,7 @@
  there are the project requirements:
 
  ## Stored the email and the prefereces in the Db
- [](https://github.com/vic778/Micolet-/blob/develop/screens/save-data.png)
+ ![](https://github.com/vic778/Micolet-/blob/develop/screens/save-data.png)
 
  ## Send an email after subscribed
  [](https://github.com/vic778/Micolet-/blob/develop/screens/enail.png)
