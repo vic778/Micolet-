@@ -5,7 +5,7 @@ class UsersController < ApplicationController
       UserMailer.newsletter_confirmation(@user).deliver_now
       redirect_to root_path, notice: 'Email sent! Thank you for subscribing to our newsletter! :)'
     else
-      redirect_to root_path
+      redirect_to root_path, alert: 'Email can not be blanck and the preferences should be selected!'
     end
   end
 

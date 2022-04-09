@@ -1,39 +1,40 @@
 
-<h1>Micolet</h1>
-
-<h3><%= t 'static_pages.index.welcome' %></h3>
-<p><%= t 'static_pages.index.services_html' %></p>
-
-
-
-<%= form_with model: @user, remote: true do |f| %>
- 
-
-  <div>
-  <%= f.label :Email %>
-  </div>
-  <div>
-  <%= f.email_field :email, placeholder: "exemple@email.com" %>
+<div class="container">
+  <h1 class="title"> Micolet </h1>
+  <div class="intro">
+    <h3><%= t 'static_pages.index.welcome' %></h3>
+    <p><%= t 'static_pages.index.services_html' %></p>
   </div>
 
-  <br>
+   <%= simple_form_for @user, html: { multipart: true } do |f| %>
+  <%= f.error_notification %>
+    <div>
+      <%= f.label :Email %>
+    </div>
+    <div>
+      <%= f.email_field :email, placeholder: "example@email.com", class: "email" %>
+    </div>
 
-  <div>
-  <%= f.label t "models.attributes.preferences" %>
-  </div>
-
-  <div>
-  <%= check_box_tag 'user[preferences][]' , 'woman', checked('woman'), id: 'preference_woman' %>
-  <%= label_tag(:preferences, "Women's Fashion") %>
     <br>
-  <%= check_box_tag 'user[preferences][]' , 'man', checked('man'), id: 'preference_man' %>
-  <%= label_tag(:preferences, "Man's Fashion") %>
-    <br>
-  <%= check_box_tag 'user[preferences][]' , 'child', checked('child'), id: 'preference_child' %>
-  <%= label_tag(:preferences, "Children's Fashion") %>
-  </div>
-   
 
-  <%= f.submit t 'global.forms.submit' %>
+    <div>
+      <%= f.label t "models.attributes.preferences" %>
+    </div>
 
-<% end %>
+    <div class="info">
+      <%= check_box_tag 'user[preferences][]' , 'woman', checked('woman'), id: 'preference_woman', class: "checks" %>
+      <%= label_tag(:preferences, "Women's Fashion", class: "label-name") %>
+       <br>
+      <%= check_box_tag 'user[preferences][]' , 'man', checked('man'), id: 'preference_man', class: "checks" %>
+      <%= label_tag(:preferences, "Man's Fashion", class: "label-name") %>
+       <br>
+      <%= check_box_tag 'user[preferences][]' , 'child', checked('child'), id: 'preference_child', class: "checks" %>
+      <%= label_tag(:preferences, "Children's Fashion", class: "label-name") %>
+    </div>
+    
+    <div class="subscribe">
+      <%= f.submit t 'global.forms.submit' %>
+    </div>
+
+  <% end %>
+</div>

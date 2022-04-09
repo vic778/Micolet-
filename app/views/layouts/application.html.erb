@@ -12,11 +12,15 @@
 
   <body>
 
-    <% if notice %>
-      <p style="color: green"><%= notice %></p>
-    <% end %>
-    <% if alert %>
-      <p style="color: green"><%= alert %></p>
+    <% if flash[:notice] %>
+          <div class="success">
+            <p class="notice"><%= notice %></p>
+          </div>
+        <% end %>
+    <% if flash[:alert] %>
+        <div class="failed">
+          <p class="alert"><%= alert %></p>
+        </div>
     <% end %>
 
     <nav class="navbar">
