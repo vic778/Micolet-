@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale }
   end
 
-  # check if the local il correct
+  # check if the local ilscorrect
   def set_locale
     I18n.locale = extract_locale || I18n.default_locale
   end

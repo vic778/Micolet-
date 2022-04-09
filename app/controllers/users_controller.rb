@@ -1,5 +1,25 @@
+require 'net/http'
+require 'net/https'
+
 class UsersController < ApplicationController
+  def make_abstract_request(user)
+    uri = URI("https://emailvalidation.abstractapi.com/v1/?api_key=e9eb98186dba4019b6cf0c1f68fee5d8&email=#{user}")
+
+    http = Net::HTTP.new(uri.host, uri.port)
+    http.use_ssl = true
+    http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+
+    request = Net::HTTP::Get.new(uri)
+
+    response = http.request(request)
+    puts "Status code: #{response.code}"
+    puts "Response body: #{response.body}"
+  rescue StandardError => e
+    puts "Error (#{e.message})"
+  end
+
   def create
+    make_abstract_request(@user)
     @user = User.new(user_params)
     if @user.save
       UserMailer.newsletter_confirmation(@user).deliver_now
