@@ -99,7 +99,7 @@ N/A
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/vic778/Micolet-/issues/6).
 
 ## Show your support
 
