@@ -34,6 +34,7 @@ gem 'jbuilder'
 # gem "redis", "~> 4.0"
 
 gem 'devise', '~> 4.7'
+gem 'omniauth-google-oauth2', '~> 1.0', '>= 1.0.1'
 gem 'simple_form', '~> 5.0'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
