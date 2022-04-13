@@ -6,13 +6,13 @@
     <p><%= t 'static_pages.index.services_html' %></p>
   </div>
 
-   <%= simple_form_for @user, html: { multipart: true } do |f| %>
+   <%= form_with model: @user, html: { multipart: true } do |f| %>
  
     <div>
       <%= f.label :Email %>
     </div>
     <div>
-      <%= f.email_field :email, placeholder: "example@email.com", class: "email" %>
+      <%= f.email_field :email, placeholder: "example@email.com", class: "email", required: true %>
     </div>
 
     <br>
@@ -33,7 +33,7 @@
     </div>
     
     <div class="subscribe">
-      <%= f.submit t 'global.forms.submit' %>
+      <%= f.submit t 'global.forms.submit', data: { disable: false } %>
     </div>
 
   <% end %>
