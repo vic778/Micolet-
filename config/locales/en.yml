@@ -1,0 +1,17 @@
+en:
+  activerecord:
+  models:
+    Home: "Home"
+    attributes:
+        email: "your email"
+        preferences: "Preferences :"
+  global:
+   forms:
+    submit: Subscribe!
+    menu:
+      home: "home"
+      user: "user"
+  static_pages:
+    index:
+      welcome: "Welcome! Soon we will launch our site in this country ."
+      services_html: "Subscribe to receive our newsletter"

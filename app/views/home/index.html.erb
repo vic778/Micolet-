@@ -1,0 +1,40 @@
+
+<div class="container">
+  <h1 class="title"> Micolet </h1>
+  <div class="intro">
+    <h3><%= t 'static_pages.index.welcome' %></h3>
+    <p><%= t 'static_pages.index.services_html' %></p>
+  </div>
+
+   <%= form_with model: @user, html: { multipart: true } do |f| %>
+ 
+    <div>
+      <%= f.label :Email %>
+    </div>
+    <div>
+      <%= f.email_field :email, placeholder: "example@email.com", class: "email", required: true %>
+    </div>
+
+    <br>
+
+    <div>
+      <%= f.label t "models.attributes.preferences" %>
+    </div>
+
+    <div class="info">
+      <%= check_box_tag 'user[preferences][]' , 'woman', checked('woman'), id: 'preference_woman', class: "checks" %>
+      <%= label_tag(:preferences, "Women's Fashion", class: "label-name") %>
+       <br>
+      <%= check_box_tag 'user[preferences][]' , 'man', checked('man'), id: 'preference_man', class: "checks" %>
+      <%= label_tag(:preferences, "Man's Fashion", class: "label-name") %>
+       <br>
+      <%= check_box_tag 'user[preferences][]' , 'child', checked('child'), id: 'preference_child', class: "checks" %>
+      <%= label_tag(:preferences, "Children's Fashion", class: "label-name") %>
+    </div>
+    
+    <div class="subscribe">
+      <%= f.submit t 'global.forms.submit', data: { disable: false } %>
+    </div>
+
+  <% end %>
+</div>

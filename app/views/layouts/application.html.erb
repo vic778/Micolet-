@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Micolet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+
+    <% if flash[:notice] %>
+          <div class="success">
+            <p class="notice"><%= notice %></p>
+          </div>
+        <% end %>
+    <% if flash[:alert] %>
+        <div class="failed">
+          <p class="alert"><%= alert %></p>
+        </div>
+    <% end %>
+
+    <nav class="navbar">
+      <ul>
+        <li><%= link_to 'English', root_path(locale: :en) %></li>
+        <li><%= link_to 'French', root_path(locale: :fr) %></li>
+        <li><%= link_to 'Spanish', root_path(locale: :es) %></li>
+      </ul>
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>
